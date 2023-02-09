@@ -1,0 +1,24 @@
+1. - Lệnh này sẽ gán giá trị true/false cho biến isA bằng cách xác định tính 
+	đúng sai của biểu thức 90 <= grade
+   - Ta cần sửa thành bool isA = (90 <= grade && grade <= 100) 
+2. - In ra 0 vì 3/5 có kiểu int nên sẽ làm tròn xuống 0, (double) 0 vẫn là 0
+3. - x * x có kiểu int, mặc khác giá trị của int không vượt quá 2^31-1 nên 
+kết quả in ra không theo ý muốn
+4. - Biểu thức có giá trị false vì sqrt(2) mang giá trị double, máy tính không thể biểu diễn chính xác sqrt(2)
+nên sqrt(2) * sqrt(2) không bằng 2 (máy tính tính giá trị của sqrt(2) trước) 
+   - Cách sửa: Dùng eps = 1e-9 và so sánh biểu thức abs(sqrt(2)*sqrt(2)-2)<=eps
+5. - RUNTIME ERROR
+6. - error: invalid operands of types ‘int’ and ‘const char [6]’ to binary ‘operator*’
+   - nếu là global variable thì sẽ in ra 0 còn nếu là local variable 
+sẽ in ra một số thực ngẫu nhiên, điều này xảy ra vì local variable khi được gọi ra mà không có giá trị khởi tạo
+thì khi chạy chương trình nó sẽ cấp phát ngẫu nhiên một vùng nhớ
+7. ouput: 0
+	    0.75
+  	    0.75
+	    0.75
+8. conflicting declaration: mâu thuẫn khai báo
+9. biến char arg1
+10. biến int arg1
+11. 5/9 có kiểu int sẽ làm tròn xuống 0, nên để là 5.0 / 9.0 hoặc
+(double)5/(double)9
+12. Lỗi
