@@ -1,0 +1,1 @@
+Trình biên dịch cảnh báo rằng giá trị được trả về là địa chỉ của biến địa phương 'c' . Điều này xảy ra bởi ta cố truy nhập vào vùng nhớ của biến địa phương khi hàm chứa biến đó đã kết thúc. (dangling reference)
